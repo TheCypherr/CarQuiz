@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ferarri.css" />
+    <title>BMW Quiz</title>
+  </head>
+  <body>
+    <header>
+      <label class="logo">
+        <a href="index.html"><img src="images/logoo.webp" /></a>
+      </label>
+      <ul class="active" id="menuToggle">
+        <li><a href="index.html" onclick="exitMenu()">Home</a></li>
+        <li><a href="#" onclick="exitMenu()">Join Club</a></li>
+        <li><a href="#" onclick="exitMenu()">About</a></li>
+        <li>
+          <a href="quiztype.html" onclick="exitMenu()" class="btn0"
+            >Take Quiz</a
+          >
+        </li>
+      </ul>
+      <div class="icon" onclick="toggleMenu()">
+        <img src="images/icon.webp" />
+      </div>
+    </header>
+    <div class="quiz-container">
+      <div id="game" class="justify-center flex-column">
+        <div class="game-top">
+          <div class="top-item">
+            <p id="progressText" class="top-prefix">Question</p>
+            <div id="progressBar">
+              <div id="progressBarFull"></div>
+            </div>
+          </div>
+          <div class="top-item">
+            <p class="top-prefix">Score</p>
+            <h1 class="top-main-text" id="score">0</h1>
+          </div>
+        </div>
+        <h1 id="question">What is the answer to this question?</h1>
+        <div id="answer-buttons">
+          <button class="btn">Answer 1</button>
+          <button class="btn">Answer 1</button>
+          <button class="btn">Answer 1</button>
+          <button class="btn">Answer 1</button>
+        </div>
+      </div>
+    </div>
+    <script src="bmw.js"></script>
+  </body>
+</html>

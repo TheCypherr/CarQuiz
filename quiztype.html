@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Select Quiz</title>
+  </head>
+  <body>
+    <header>
+      <label class="logo">
+        <a href="index.html"><img src="images/logoo.webp" /></a>
+      </label>
+      <ul class="active" id="menuToggle">
+        <li><a href="index.html" onclick="exitMenu()">Home</a></li>
+        <li><a href="#" onclick="exitMenu()">Join Club</a></li>
+        <li><a href="#" onclick="exitMenu()">About</a></li>
+        <li><a href="quiztype.html" onclick="exitMenu()" class="btn0">Take Quiz</a></li>
+      </ul>
+      <div class="icon" onclick="toggleMenu()">
+        <img src="images/icon.webp" />
+      </div>
+    </header>
+    <div class="container">
+      <div class="small-container small2">
+        <div class="side2">
+            <div class="slides">
+                <img src="images/corvette1.webp" />
+                <img src="images/amg3.webp" />
+                <img src="images/amg4.webp" />
+                <img src="images/corvette3.webp" />
+                <img src="images/corvette4.webp" />
+                <img src="images/corvette2.webp" />
+                <img src="images/ferarri2.webp" />
+                <img src="images/bmw22.webp" />
+                <img src="images/amg2.webp" />
+                <img src="images/ferarri4.webp" />
+                <img src="images/amg3.webp" />
+                <img src="images/bmw3.webp" />
+                <img src="images/ferarri3.webp" />
+                <img src="images/amg5.webp" />
+                <img src="images/bmw1.webp" />
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094</button>
+            <button class="next" onclick="nextSlide()">&#10095</button>
+          </div>
+        <div class="side22">
+          <h1>SELECT QUIZ TYPE</h1>
+          <div class="btn2">
+            <a href="ferarri.html"><button>Ferarri Quiz</button></a>
+          </div>
+          <div class="btn2">
+            <a href="mercedes.html"><button>Mercedes-Benz Quiz</button></a>
+          </div>
+          <div class="btn2">
+            <a href="bmw.html"><button>BMW Quiz</button></a>
+          </div>
+          <div class="btn2">
+            <a href="corvette.html"><button>Corvette Quiz</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="quiztype.js"></script>
+  </body>
+</html>

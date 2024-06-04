@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ferarri.css" />
+    <title>Score</title>
+  </head>
+  <body>
+    <header>
+      <label class="logo">
+        <a href="index.html"><img src="images/logoo.webp" /></a>
+      </label>
+      <ul class="active" id="menuToggle">
+        <li><a href="index.html" onclick="exitMenu()">Home</a></li>
+        <li><a href="#" onclick="exitMenu()">Join Club</a></li>
+        <li><a href="#" onclick="exitMenu()">About</a></li>
+        <li>
+          <a href="quiztype.html" onclick="exitMenu()" class="btn0"
+            >Take Quiz</a
+          >
+        </li>
+      </ul>
+      <div class="icon" onclick="toggleMenu()">
+        <img src="images/icon.webp" />
+      </div>
+    </header>
+    <div class="quiz-container end-container">
+      <div class="justify-center flex-column end">
+        <h1 id="totalScore">0</h1>
+        <a href="bmw.html"><button class="btn0">PLAY AGAIN</button></a>
+        <a href="quiztype.html"
+          ><button class="btn0">TAKE ANOTHER QUIZ</button></a
+        >
+        <a href="index.html"><button class="btn0">HOME</button></a>
+      </div>
+    </div>
+    <script src="end.js"></script>
+  </body>
+</html>
